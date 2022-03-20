@@ -15,10 +15,10 @@ $ bash list_projects.sh
 **example**
 
 ```bash
-PROJECT_PATH	CODE_PATH	UNLINKED	VIRTUALENV_SIZE
-/Users/niccari/.local/share/virtualenvs/foo-project-7KRJjpxu/.project	/Users/niccari/dev/foo-project	-	 24M
-/Users/niccari/.local/share/virtualenvs/hoge-project-Pw7hUalW/.project	/Users/niccari/dev/hoge-project	-	105M
-/Users/niccari/.local/share/virtualenvs/bar-project-NTU4ZjA2/.project	/Users/niccari/dev/bar-project	-	201M
+PROJECT_PATH	CODE_PATH	PYTHON_VERSION	UNLINKED	VIRTUALENV_SIZE
+/Users/niccari/.local/share/virtualenvs/foo-project-7KRJjpxu/.project	/Users/niccari/dev/foo-project	3.10.3	-	 24M
+/Users/niccari/.local/share/virtualenvs/hoge-project-Pw7hUalW/.project	/Users/niccari/dev/hoge-project	3.10.3	-	105M
+/Users/niccari/.local/share/virtualenvs/bar-project-NTU4ZjA2/.project	/Users/niccari/dev/bar-project	3.10.3	-	201M
 ```
 
 ### 2. Removing unused(source code has been removed) virtualenvs
