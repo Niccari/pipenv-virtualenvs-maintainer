@@ -25,7 +25,7 @@ for project_path in ${project_paths[@]}; do
   fi
   virtualenv_path=${project_path//\/${PROJECT_BASENAME}}
   virtualenv_size=$(du -hs $virtualenv_path | cut -f 1)
-  python_version=$(${virtualenv_path}/bin/python --version | cut -d " " -f 2)
+  python_version=$(cat ${virtualenv_path}/pyvenv.cfg | grep version_info | cut -d "=" -f 2)
   echo -e "$project_path\t$code_path\t$python_version\t$unlinked\t$virtualenv_size"
 done
 
